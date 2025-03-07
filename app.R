@@ -7,8 +7,12 @@ library(ggplot2)
 library(dplyr)
 
 #explore dataset
-data(iris)
-head(iris)
-summary(iris)
-str(iris)
+data()
+
+#choose dataset
+data(airquality)
+head(airquality)
+summary(airquality)
+str(airquality)
+
 
