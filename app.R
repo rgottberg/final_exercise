@@ -35,5 +35,11 @@ df3 <- df2 |>
     mutate(date = paste(Month,Day,"2025",sep='-')) |>
     mutate(date = lubridate::mdy(date))
 
-
-
+#create visualisation
+ggplot(df3, aes(x = date, y=Temp)) + 
+    geom_point(size=2) +
+    labs(
+        title= "Temperature measures accros the year",
+        x = "Months",
+        y = "Temperatures"
+    )
